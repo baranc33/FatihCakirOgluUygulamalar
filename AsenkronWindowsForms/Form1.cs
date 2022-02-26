@@ -20,7 +20,7 @@ namespace AsenkronWindowsForms
 
         private async void btnOku_Click(object sender, EventArgs e)
         {
-           string data= await ReadFileAsync();
+           string data= await ReadFileAsync2();
             richTextBox1.Text = data;
         }
 
@@ -63,6 +63,21 @@ namespace AsenkronWindowsForms
            
             return Data;
             }
+        }
+
+
+        private Task<string> ReadFileAsync2()
+        {
+            string path = "dosya.txt";
+            string Data = string.Empty;
+            using (StreamReader sr = new StreamReader(path))
+            {
+                return sr.ReadToEndAsync();
+            }
+        }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 
