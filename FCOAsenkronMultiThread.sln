@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AsenkronWindowsForms", "Ase
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskWebApp.API", "TaskWebApp.API\TaskWebApp.API.csproj", "{ED673278-1F49-4D9C-ADA5-34173A701FEB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{0F0D5956-D99D-4464-B4D8-42EE68E1B311}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{ED673278-1F49-4D9C-ADA5-34173A701FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED673278-1F49-4D9C-ADA5-34173A701FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED673278-1F49-4D9C-ADA5-34173A701FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F0D5956-D99D-4464-B4D8-42EE68E1B311}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F0D5956-D99D-4464-B4D8-42EE68E1B311}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F0D5956-D99D-4464-B4D8-42EE68E1B311}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F0D5956-D99D-4464-B4D8-42EE68E1B311}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
