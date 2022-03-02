@@ -1,4 +1,6 @@
 ﻿
+Console.WriteLine("Main Thraead " + Thread.CurrentThread.ManagedThreadId);
+
 List<string> urlList = new List<string>()
 {
     "https://www.google.com",
@@ -17,27 +19,11 @@ urlList.ToList().ForEach(x =>
     taskList.Add(GetContentAsync(x));
 });
 
-// 1. senaryoda direk işlem yabiliriz
-//var contents = await Task.WhenAll(taskList.ToArray());
-//contents.ToList().ForEach(x =>
-//{
-//    Console.WriteLine($"{x.Site} boyu:{ x.Len}");
-//});
 
-// 2. senaryoda araya farklı işlemler sokarakta yapabiliriz
-var contents = Task.WhenAll(taskList.ToArray());
-///burda farklı işlemler yapabiliriz
-///
-var data = await contents;
-
-data.ToList().ForEach(x =>
-{
-    Console.WriteLine($"{x.Site} boyu:{ x.Len}");
-});
+var FirstData=await Task.WhenAny(taskList);
 
 
-
-
+Console.WriteLine($"{FirstData.Result.Site} - {FirstData.Result.Len} ");
 
 
 
@@ -52,15 +38,4 @@ static async Task<Content> GetContentAsync(string url)
     Console.WriteLine("GetContentAsync Thraead " + Thread.CurrentThread.ManagedThreadId);
 
     return c;
-}
-
-
-
-
-
-
-public class Content
-{
-    public string Site { get; set; }
-    public int Len { get; set; }
 }
