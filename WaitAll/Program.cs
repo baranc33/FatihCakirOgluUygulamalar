@@ -1,4 +1,11 @@
-﻿
+﻿// whenall metodundan farkı Ana Thradi kitler
+// diğer bir farkı istersen milisaniye cinsiden bir parametre alır eğer
+// belirtilen süre içersinde cevap dönerse true dönmezse işlemi iptal eder false döner
+
+
+
+
+
 List<string> urlList = new List<string>()
 {
     "https://www.google.com",
@@ -17,28 +24,16 @@ urlList.ToList().ForEach(x =>
     taskList.Add(GetContentAsync(x));
 });
 
-// 1. senaryoda direk işlem yabiliriz
-//var contents = await Task.WhenAll(taskList.ToArray());
-//contents.ToList().ForEach(x =>
-//{
-//    Console.WriteLine($"{x.Site} boyu:{ x.Len}");
-//});
 
-// 2. senaryoda araya farklı işlemler sokarakta yapabiliriz
-var contents = Task.WhenAll(taskList.ToArray());
-///burda farklı işlemler yapabiliriz
-///
-var data = await contents;
+Console.WriteLine("WaitAll metodundan önce");
+bool result=Task.WaitAll(taskList.ToArray(),3000);
+// istersek saniye vermiyede biliriz
+//bool result=Task.WaitAll(taskList.ToArray());
+Console.WriteLine("3 saniyede geldi mi : " + result);
 
-data.ToList().ForEach(x =>
-{
-    Console.WriteLine($"{x.Site} boyu:{ x.Len}");
-});
+Console.WriteLine("WaitAll methodundan sonra");
 
-
-
-
-
+Console.WriteLine($"{taskList.First().Result.Site} - {taskList.First().Result.Len}");
 
 
 
@@ -53,8 +48,3 @@ static async Task<Content> GetContentAsync(string url)
 
     return c;
 }
-
-
-
-
-

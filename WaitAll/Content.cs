@@ -1,4 +1,5 @@
 ﻿
+
 public class Content
 {
     public string Site { get; set; }

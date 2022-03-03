@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhenAll", "WhenAll\WhenAll.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhenAny", "WhenAny\WhenAny.csproj", "{7720ACAB-272F-4272-A64F-01F4DF50851F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaitAll", "WaitAll\WaitAll.csproj", "{1C2A42FD-A693-4F8D-A306-B3EEA2EB003C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{7720ACAB-272F-4272-A64F-01F4DF50851F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7720ACAB-272F-4272-A64F-01F4DF50851F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7720ACAB-272F-4272-A64F-01F4DF50851F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C2A42FD-A693-4F8D-A306-B3EEA2EB003C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C2A42FD-A693-4F8D-A306-B3EEA2EB003C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C2A42FD-A693-4F8D-A306-B3EEA2EB003C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C2A42FD-A693-4F8D-A306-B3EEA2EB003C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
