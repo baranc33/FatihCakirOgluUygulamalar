@@ -1,8 +1,9 @@
 ﻿/*
- Wait Any Çağrıldığı threadi bloklar
- Verilen tasklerden bir array alır
-önce Tamamlanan taskin indexini alır.
+ 
  */
+
+
+
 
 List<string> urlList = new List<string>()
 {
@@ -16,19 +17,20 @@ List<string> urlList = new List<string>()
 
 List<Task<Content>> taskList = new List<Task<Content>>();
 
-
 urlList.ToList().ForEach(x =>
 {
     taskList.Add(GetContentAsync(x));
 });
 
 
-Console.WriteLine("WaitAny metodundan önce");
-int firstTaskIndex= Task.WaitAny(taskList.ToArray());
+Console.WriteLine("Delay metodundan önce");
+Content[] contents = await Task.WhenAll(taskList.ToArray());
 
+contents.ToList().ForEach(x =>
+{
+    Console.WriteLine(x.Site);
+});
 
-
-Console.WriteLine($"{taskList[firstTaskIndex].Result.Site} - {taskList[firstTaskIndex].Result.Len}");
 
 
 
@@ -36,6 +38,9 @@ static async Task<Content> GetContentAsync(string url)
 {
     Content c = new Content();
     var data = await new HttpClient().GetStringAsync(url);
+
+    // burası
+    await Task.Delay(1000);
 
     c.Site = url;
     c.Len = data.Length;

@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskThreadApp", "TaskThread
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaitAny", "WaitAny\WaitAny.csproj", "{FABE7119-6C05-480F-AC65-73ED23D1435B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delay", "Delay\Delay.csproj", "{3639B795-12ED-41A2-88A7-CF92336D7706}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{FABE7119-6C05-480F-AC65-73ED23D1435B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FABE7119-6C05-480F-AC65-73ED23D1435B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FABE7119-6C05-480F-AC65-73ED23D1435B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3639B795-12ED-41A2-88A7-CF92336D7706}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3639B795-12ED-41A2-88A7-CF92336D7706}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3639B795-12ED-41A2-88A7-CF92336D7706}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3639B795-12ED-41A2-88A7-CF92336D7706}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
