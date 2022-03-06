@@ -9,11 +9,15 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskWebApp.API", "TaskWebAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestConsoleApp", "TestConsoleApp\TestConsoleApp.csproj", "{0F0D5956-D99D-4464-B4D8-42EE68E1B311}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhenAll", "WhenAll\WhenAll.csproj", "{55500D7D-AE12-4CEC-A50A-FE07C1A1528C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhenAll", "WhenAll\WhenAll.csproj", "{55500D7D-AE12-4CEC-A50A-FE07C1A1528C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WhenAny", "WhenAny\WhenAny.csproj", "{7720ACAB-272F-4272-A64F-01F4DF50851F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WhenAny", "WhenAny\WhenAny.csproj", "{7720ACAB-272F-4272-A64F-01F4DF50851F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaitAll", "WaitAll\WaitAll.csproj", "{1C2A42FD-A693-4F8D-A306-B3EEA2EB003C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WaitAll", "WaitAll\WaitAll.csproj", "{1C2A42FD-A693-4F8D-A306-B3EEA2EB003C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TaskThreadApp", "TaskThreadApp\TaskThreadApp.csproj", "{C0E9919A-3007-4DDD-B651-7363FAFF9478}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WaitAny", "WaitAny\WaitAny.csproj", "{FABE7119-6C05-480F-AC65-73ED23D1435B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +49,14 @@ Global
 		{1C2A42FD-A693-4F8D-A306-B3EEA2EB003C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1C2A42FD-A693-4F8D-A306-B3EEA2EB003C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1C2A42FD-A693-4F8D-A306-B3EEA2EB003C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C0E9919A-3007-4DDD-B651-7363FAFF9478}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C0E9919A-3007-4DDD-B651-7363FAFF9478}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C0E9919A-3007-4DDD-B651-7363FAFF9478}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C0E9919A-3007-4DDD-B651-7363FAFF9478}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FABE7119-6C05-480F-AC65-73ED23D1435B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABE7119-6C05-480F-AC65-73ED23D1435B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABE7119-6C05-480F-AC65-73ED23D1435B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABE7119-6C05-480F-AC65-73ED23D1435B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
