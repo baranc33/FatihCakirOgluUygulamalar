@@ -42,6 +42,7 @@
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Başlat";
             this.btnStart.UseVisualStyleBackColor = true;
+            this.btnStart.Click += new System.EventHandler(this.btnStart_Click);
             // 
             // progressBar1
             // 
@@ -59,7 +60,7 @@
             // 
             // btnCounter
             // 
-            this.btnCounter.Location = new System.Drawing.Point(268, 52);
+            this.btnCounter.Location = new System.Drawing.Point(288, 52);
             this.btnCounter.Name = "btnCounter";
             this.btnCounter.Size = new System.Drawing.Size(107, 45);
             this.btnCounter.TabIndex = 4;
