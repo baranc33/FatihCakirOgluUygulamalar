@@ -1,8 +1,7 @@
 ﻿/*
  Startnew metoduda Run metodu gibi çalışır Rundan farkı Runda Bir obje gönderemiyoruz
  startnew ile bir obje gönderebiliriz içerde işlemler yapktıktan sonra bu objeyi alabiliyoruz
- 
- */
+  */
 
 internal class Program
 {
