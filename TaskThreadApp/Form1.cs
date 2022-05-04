@@ -6,6 +6,9 @@ namespace TaskThreadApp
         public Form1()
         {
             InitializeComponent();
+            //CheckForIllegalCrossThreadCalls=false;//uygun olmiyan çapraz thread eriþimlerinin kontrolünü yapma
+
+
         }
 
         private void btnCounter_Click(object sender, EventArgs e)
@@ -29,7 +32,6 @@ namespace TaskThreadApp
                      // daha önce program.cs middle warelerin bir birini tetiklemesi mantýðýyla ayný
                      // ordaki ýnvoke metoduna benzettim.
 
-
                  });
         });
 
@@ -44,6 +46,11 @@ namespace TaskThreadApp
          // test etmek için run metodunu kaldýrýp denediþm sonuç gene senkron kod oluyor.
             var atask=  Go(progressBar1);
             var btask = Go(progressBar2);
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

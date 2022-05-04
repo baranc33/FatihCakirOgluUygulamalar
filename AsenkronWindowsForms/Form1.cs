@@ -20,8 +20,8 @@ namespace AsenkronWindowsForms
 
         private async void btnOku_Click(object sender, EventArgs e)
         {
-           string data= await ReadFileAsync2();
-            richTextBox1.Text = data;
+           var data=  ReadFileAsync();
+            richTextBox1.Text = data.ToString();
         }
 
 
@@ -58,10 +58,9 @@ namespace AsenkronWindowsForms
 
                 // Burda dataya bağlı olmiyan işlemlerimizi yaparız şuanda data çekiliyor
                 // metot asenkron olduğundan o işlemini yaparken biz farklı işlemler yaparız 
-
-                Data = await myData;// bu data artık bana lazım bunu bana verene kadar bekle
+                //Data = await myData;// bu data artık bana lazım bunu bana verene kadar bekle
            
-            return Data;
+            return await myData;
             }
         }
 
@@ -73,6 +72,7 @@ namespace AsenkronWindowsForms
             using (StreamReader sr = new StreamReader(path))
             {
                 return sr.ReadToEndAsync();
+
             }
         }
         private void Form1_Load(object sender, EventArgs e)

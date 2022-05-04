@@ -3,9 +3,6 @@
 // belirtilen süre içersinde cevap dönerse true dönmezse işlemi iptal eder false döner
 
 
-
-
-
 List<string> urlList = new List<string>()
 {
     "https://www.google.com",

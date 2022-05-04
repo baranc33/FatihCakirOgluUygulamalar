@@ -36,9 +36,10 @@
             // 
             // btnStart
             // 
-            this.btnStart.Location = new System.Drawing.Point(91, 52);
+            this.btnStart.Location = new System.Drawing.Point(104, 69);
+            this.btnStart.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnStart.Name = "btnStart";
-            this.btnStart.Size = new System.Drawing.Size(107, 45);
+            this.btnStart.Size = new System.Drawing.Size(122, 60);
             this.btnStart.TabIndex = 0;
             this.btnStart.Text = "Başlat";
             this.btnStart.UseVisualStyleBackColor = true;
@@ -46,23 +47,26 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(91, 116);
+            this.progressBar1.Location = new System.Drawing.Point(104, 155);
+            this.progressBar1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(644, 23);
+            this.progressBar1.Size = new System.Drawing.Size(736, 31);
             this.progressBar1.TabIndex = 2;
             // 
             // progressBar2
             // 
-            this.progressBar2.Location = new System.Drawing.Point(91, 164);
+            this.progressBar2.Location = new System.Drawing.Point(104, 219);
+            this.progressBar2.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.progressBar2.Name = "progressBar2";
-            this.progressBar2.Size = new System.Drawing.Size(644, 23);
+            this.progressBar2.Size = new System.Drawing.Size(736, 31);
             this.progressBar2.TabIndex = 3;
             // 
             // btnCounter
             // 
-            this.btnCounter.Location = new System.Drawing.Point(288, 52);
+            this.btnCounter.Location = new System.Drawing.Point(329, 69);
+            this.btnCounter.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnCounter.Name = "btnCounter";
-            this.btnCounter.Size = new System.Drawing.Size(107, 45);
+            this.btnCounter.Size = new System.Drawing.Size(122, 60);
             this.btnCounter.TabIndex = 4;
             this.btnCounter.Text = "Sayaç";
             this.btnCounter.UseVisualStyleBackColor = true;
@@ -70,15 +74,17 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(914, 600);
             this.Controls.Add(this.btnCounter);
             this.Controls.Add(this.progressBar2);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnStart);
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
         }
