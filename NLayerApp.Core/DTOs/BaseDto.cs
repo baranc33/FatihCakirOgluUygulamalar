@@ -13,7 +13,6 @@ namespace NLayerApp.Core.DTOs
     }
 
 
-  
 
 
 
