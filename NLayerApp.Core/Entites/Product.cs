@@ -4,6 +4,7 @@ namespace NLayerApp.Core.Entites
 {
     public class Product : BaseEntity
     {
+   
         public string Name{ get; set; }
         public int Stock{ get; set; }
         public decimal Price{ get; set; }
@@ -12,7 +13,7 @@ namespace NLayerApp.Core.Entites
         //[ForeignKey("Category_Id")]// yukardaki isimlendirme kuralına uyulmicaksa
         // bu şekilde bir attribute yardımıyla belirtilmelidir
         public Category Category { get; set; }
-        public ProductFeature ProductFeature { get; set; }
+        public ProductFeature? ProductFeature { get; set; }
     }
 
 }
