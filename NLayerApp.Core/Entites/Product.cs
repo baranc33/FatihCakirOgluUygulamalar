@@ -12,6 +12,7 @@ namespace NLayerApp.Core.Entites
         //[ForeignKey("Category_Id")]// yukardaki isimlendirme kuralına uyulmicaksa
         // bu şekilde bir attribute yardımıyla belirtilmelidir
         public Category Category { get; set; }
+        public ProductFeature ProductFeature { get; set; }
     }
 
 }
