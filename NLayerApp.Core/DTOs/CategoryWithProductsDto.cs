@@ -4,11 +4,4 @@
     {
         public List<ProductDto> Products { get; set; }
     }
-
-
-
-
-
-
-
 }
