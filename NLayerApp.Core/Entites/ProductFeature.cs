@@ -1,5 +1,7 @@
 ﻿namespace NLayerApp.Core.Entites
 {
-    public class ProductFeature : BaseEntity { }
+    public class ProductFeature : BaseEntity
+    {
+    }
 
 }
