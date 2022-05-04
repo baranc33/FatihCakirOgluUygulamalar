@@ -1,4 +1,4 @@
-﻿namespace NLayerApp.Core
+﻿namespace NLayerApp.Repository
 {
     public class Class1
     {
