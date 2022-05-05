@@ -1,4 +1,4 @@
-﻿namespace NLayerApp.Core.ErorResponseDto
+﻿namespace NLayerApp.Core.ResponseDto
 {
     public class ErrorViewModel
     {
