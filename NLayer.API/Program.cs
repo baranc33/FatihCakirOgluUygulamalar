@@ -5,6 +5,7 @@ using NLayerApp.Core.UnitOfWorks;
 using NLayerApp.Repository;
 using NLayerApp.Repository.Repositories;
 using NLayerApp.Repository.UnitOfWorks;
+using NLayerApp.Service.Mapping;
 using NLayerApp.Service.Services;
 using System.Reflection;
 
@@ -24,7 +25,7 @@ builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped(typeof(IService<>), typeof(Service<>));
 builder.Services.AddScoped<IProductService, ProductService>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
-
+builder.Services.AddAutoMapper(typeof(MapProfile));
 
 builder.Services.AddDbContext<AppDbContext>(x =>
 {
