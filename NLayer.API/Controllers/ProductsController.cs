@@ -28,6 +28,8 @@ namespace NLayer.API.Controllers
 
             return CreateActionResult(await _service.GetProductsWithCategory());
         }
+
+        [HttpGet]
         public async Task<IActionResult> All()
         {
             var products = await _service.GetAllAsync();
@@ -36,13 +38,11 @@ namespace NLayer.API.Controllers
             return CreateActionResult(CustomResponseDto<List<ProductDto>>.Success(200, ProductsDtos));
         }
 
-        //[ServiceFilter(typeof(NotFoundFilter<Product>))]
-        // GET /api/products/5
-        [HttpGet("{id}")]
+        ////[ServiceFilter(typeof(NotFoundFilter<Product>))]
+        //// GET /api/products/5
+        [HttpGet("{id}")]// query string olarak değilde  controller/id şeklinde alabilmek için
         public async Task<IActionResult> GetById(int id)
         {
-
-
             var product = await _service.GetByIdAsync(id);
             var productsDto = _mapper.Map<ProductDto>(product);
             return CreateActionResult(CustomResponseDto<ProductDto>.Success(200, productsDto));
@@ -72,9 +72,6 @@ namespace NLayer.API.Controllers
         public async Task<IActionResult> Remove(int id)
         {
             var product = await _service.GetByIdAsync(id);
-
-
-
 
             await _service.RemoveAsync(product);
 
