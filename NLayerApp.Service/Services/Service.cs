@@ -2,12 +2,7 @@
 using NLayerApp.Core.Repositories;
 using NLayerApp.Core.Services;
 using NLayerApp.Core.UnitOfWorks;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Linq.Expressions;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayerApp.Service.Services
 {
@@ -20,8 +15,6 @@ namespace NLayerApp.Service.Services
             _repository = repository;
             _unitOfWork = unitOfWork;
         }
-
-
 
         public async Task<T> AddAsync(T entity)
         {
@@ -57,7 +50,6 @@ namespace NLayerApp.Service.Services
             }
             return hasProduct;
         }
-
         public async Task RemoveAsync(T entity)
         {
             _repository.Remove(entity);

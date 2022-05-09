@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
+using NLayerApp.Core.DTOs;
 using NLayerApp.Core.Entites;
 using NLayerApp.Core.Repositories;
+using NLayerApp.Core.ResponseDto;
 using NLayerApp.Core.Services;
 using NLayerApp.Core.UnitOfWorks;
 
@@ -17,15 +19,13 @@ namespace NLayerApp.Service.Services
             _categoryRepository = categoryRepository;
         }
 
-        //public async Task<CustomResponseDto<CategoryWithProductsDto>> GetSingleCategoryByIdWithProductsAsync(int categoryId)
-        //{
-        //    var category = await _categoryRepository.GetSingleCategoryByIdWithProductsAsync(categoryId);
+        public async Task<CustomResponseDto<CategoryWithProductsDto>> GetSingleCategoryByIdWithProductsAsync(int categoryId)
+        {
+            var category = await _categoryRepository.GetSingleCategoryByIdWithProductsAsync(categoryId);
 
-        //    var categoryDto = _mapper.Map<CategoryWithProductsDto>(category);
+            var categoryDto = _mapper.Map<CategoryWithProductsDto>(category);
 
-        //    return CustomResponseDto<CategoryWithProductsDto>.Success(200, categoryDto);
-        //}
+            return CustomResponseDto<CategoryWithProductsDto>.Success(200, categoryDto);
+        }
     }
-
-
 }
