@@ -16,8 +16,6 @@ namespace NLayerApp.Repository.Seeds
                 Price = 100,
                 Stock = 20,
                 CreatedDate = DateTime.Now
-
-
             },
             new Product
             {
@@ -27,8 +25,6 @@ namespace NLayerApp.Repository.Seeds
                 Price = 200,
                 Stock = 30,
                 CreatedDate = DateTime.Now
-
-
             },
              new Product
              {
@@ -38,8 +34,6 @@ namespace NLayerApp.Repository.Seeds
                  Price = 600,
                  Stock = 60,
                  CreatedDate = DateTime.Now
-
-
              },
                new Product
                {
@@ -49,8 +43,6 @@ namespace NLayerApp.Repository.Seeds
                    Price = 600,
                    Stock = 60,
                    CreatedDate = DateTime.Now
-
-
                },
                new Product
                {
@@ -60,10 +52,7 @@ namespace NLayerApp.Repository.Seeds
                    Price = 6600,
                    Stock = 320,
                    CreatedDate = DateTime.Now
-
-
                });
-
         }
     }
 }

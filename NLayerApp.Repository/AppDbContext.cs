@@ -1,11 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using NLayerApp.Core.Entites;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace NLayerApp.Repository
 {
@@ -109,12 +104,7 @@ namespace NLayerApp.Repository
                 ProductId = 2
 
 
-            }
-
-
-            );
-
-
+            });
 
 
             base.OnModelCreating(modelBuilder);

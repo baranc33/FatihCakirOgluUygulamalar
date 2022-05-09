@@ -18,10 +18,7 @@ namespace NLayerApp.Repository.Repositories
 
         public async Task AddAsync(T entity)
         {
-
             await _dbSet.AddAsync(entity);
-
-
         }
 
         public async Task AddRangeAsync(IEnumerable<T> entities)
@@ -33,8 +30,6 @@ namespace NLayerApp.Repository.Repositories
         {
             return await _dbSet.AnyAsync(expression);
         }
-
-
 
         public IQueryable<T> GetAll()
         {
