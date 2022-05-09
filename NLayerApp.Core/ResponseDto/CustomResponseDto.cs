@@ -8,15 +8,10 @@ namespace NLayerApp.Core.ResponseDto
 
         [JsonIgnore]
         public int StatusCode { get; set; }
-
-
         public List<String> Errors { get; set; }
 
 
-
-
         // static factory design pattern uygulayarak metotlar oluşturcaz
-
 
         /// <summary>
         /// Başarılı Data var
