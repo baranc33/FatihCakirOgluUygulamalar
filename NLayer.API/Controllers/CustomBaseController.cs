@@ -22,8 +22,6 @@ namespace NLayer.API.Controllers
             {
                 StatusCode = response.StatusCode
             };
-
-
         }
     }
 }
